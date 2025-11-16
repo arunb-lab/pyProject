@@ -26,6 +26,17 @@ def create_character(name, strength, intelligence, charisma):
     if (strength+intelligence+charisma) != 7:
         return"The character should start with 7 points"
 
+    def make_bar(value):
+        return full_dot * value + empty_dot * (10 - value)
+
+
+    return (
+        f"{name}\n"
+        f"STR {make_bar(strength)}\n"
+        f"INT {make_bar(intelligence)}\n"
+        f"CHA {make_bar(charisma)}"
+    )
+    
     return {
         "name": name,
         "strength": strength,
