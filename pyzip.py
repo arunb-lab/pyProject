@@ -18,3 +18,12 @@ languages = ['Spanish', 'English', 'Russian', 'Chinese']
 
 for index, language in enumerate(languages, 1):
     print(f'Index {index} and language {language}')
+
+#If we pass a list of developers and ids to the zip() function and convert its returned value into a list with the list() function, here's what it looks like:
+developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
+ids = [1, 2, 3, 4]
+
+list(zip(developers, ids))
+# [('Naomi', 1), ('Dario', 2), ('Jessica', 3), ('Tom', 4)]
+for developer, id in zip(developers, ids):
+    print(f'Developer {developer} has id {id}')
