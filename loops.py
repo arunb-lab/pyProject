@@ -24,3 +24,10 @@ while guess != secret_number:
         print('Wrong! Try again.')
 
 print('You got it!')
+
+developer_names = ['Jess', 'Naomi', 'Tom']
+
+for developer in developer_names:
+    if developer == 'Naomi':
+        continue
+    print(developer)
