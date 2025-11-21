@@ -6,6 +6,10 @@ def pin_extractor(poem):
         print(line_index, line)  # Print each line to the console.
         words = line.split() # Split each line into words based on spaces, and assign the resulting list to a variable called words.
         print(words)  # Print the list of words to the console.
+        if line_index < len(words):
+            print(words[line_index])  # Print the word at the position corresponding to the line index.
+        else:
+            pass
     return secret_code
     
 poem = """Stars and the moon
